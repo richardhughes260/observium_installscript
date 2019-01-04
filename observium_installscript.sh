@@ -136,8 +136,8 @@ elif [ $OS = "Ubuntu" ] && [ $VER = "14.04" ]; then
    echo -e "${GREEN} [*] We are on Ubuntu 14.04, installing packages...${NC}"
    apt-get -qq install -y libapache2-mod-php5 php5-cli php5-mysql php5-gd php5-mcrypt php5-json php-pear snmp fping mysql-server mysql-client python-mysqldb rrdtool subversion whois mtr-tiny ipmitool graphviz imagemagick
    php5enmod mcrypt
-elif [ $OS = "Ubuntu" ] && [ $VER = "17.04" ]; then
-   echo -e "${GREEN} [*] We are on Ubuntu 17.04, installing packages...${NC}"
+elif [ $OS = "Ubuntu" ] && [ $VER = "18.04" ]; then
+   echo -e "${GREEN} [*] We are on Ubuntu 18.04, installing packages...${NC}"
    apt-get -qq install -y libapache2-mod-php7.0 php7.0-cli php7.0-mysql php7.0-mysqli php7.0-gd php7.0-mcrypt php7.0-json php-pear snmp fping mysql-server mysql-client python-mysqldb rrdtool subversion whois mtr-tiny ipmitool graphviz imagemagick apache2
    phpenmod mcrypt
    a2dismod mpm_event
